@@ -1484,7 +1484,8 @@ dir /s SYSTEM
 - Obtaining Hashes from SYSTEM and SAM
 
 ```bash
-impacket-secretsdump -system SYSTEM -sam SAM local #always mention local in the command
+impacket-secretsdump -system SYSTEM -sam SAM local 
+#always mention local in the command
 #Now a detailed list of hashes are displayed
 ```
 
