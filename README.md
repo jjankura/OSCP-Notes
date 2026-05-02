@@ -719,6 +719,12 @@ start #after adding relevent subnet to ligolo interface
 #Adding subnet to ligolo interface - Kali linux
 sudo ip r add <subnet> dev ligolo
 
+#Add listener to transfer files from Kali (on ligolo-ng console)
+ex: listener_add --addr 0.0.0.0:2000 --to 0.0.0.0:8081
+#Serve on port 8081 from Kali, request from port 2000 on pivot machine
+listener_add --addr <RHOST>:<LPORT> --to <LHOST>:<LPORT> --tcp
+
+
 ```
 
 ---
