@@ -1832,6 +1832,9 @@ https://raw.githubusercontent.com/worawit/CVE-2021-3156/main/exploit_nss.py
 >./exploit_nss.py (#Got roo shell)
 
 ```
+
+## screen-v4.5.0 PrivEsc ([https://github.com/YasserREED/screen-v4.5.0-priv-escalate/tree/main]https://github.com/YasserREED/screen-v4.5.0-priv-escalate/tree/main)
+
 ---
 # Post Exploitation
 
