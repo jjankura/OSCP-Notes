@@ -1024,6 +1024,9 @@ snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.25.4.2.1.2 #Windows Processes enumeratio
 snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.25.6.3.1.2 #Installed software enumeraion
 snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.6.13.1.3 #Opened TCP Ports
 
+#SNMPWALK can be used with multiple versions:
+#-v 1|2c|3	specifies SNMP version to use
+
 #Windows MIB values
 1.3.6.1.2.1.25.1.6.0 - System Processes
 1.3.6.1.2.1.25.4.2.1.2 - Running Programs
