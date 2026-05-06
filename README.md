@@ -1023,6 +1023,7 @@ snmpwalk -c public -v1 <IP> 1.3.6.1.4.1.77.1.2.25 #Windows User enumeration
 snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.25.4.2.1.2 #Windows Processes enumeration
 snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.25.6.3.1.2 #Installed software enumeraion
 snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.6.13.1.3 #Opened TCP Ports
+snmpwalk -v <VERSION> -c <COMMUNITY> <IP> NET-SNMP-EXTEND-MIB::nsExtendObjects
 
 #SNMPWALK can be used with multiple versions:
 #-v 1|2c|3	specifies SNMP version to use
